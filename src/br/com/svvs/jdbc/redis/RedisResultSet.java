@@ -1066,4 +1066,17 @@ public class RedisResultSet implements ResultSet {
 		throw new SQLFeatureNotSupportedException();
 	}
 
+	@Override
+	public <T> T getObject(int columnIndex, Class<T> type) throws SQLException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public <T> T getObject(String columnLabel, Class<T> type)
+			throws SQLException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

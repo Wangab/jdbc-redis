@@ -46,3 +46,5 @@ COPYRIGHT/LICENSE
 
 JDBC-Redis is licensed with BSD-License see http://code.google.com/p/jdbc-redis for
 more information and the COPYRIGHT file.
+
+2015-08-25 add geodist commands support.

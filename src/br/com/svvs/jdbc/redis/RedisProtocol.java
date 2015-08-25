@@ -13,6 +13,19 @@ public enum RedisProtocol implements RedisMessageHandler {
 			return this.digester.parseResultMessage(msg);
 		}
 	},
+	GEODIST(new RedisSimpleDigester("GEODIST")){
+
+		@Override
+		public String createMsg(String msg) throws RedisParseException {
+			return this.digester.createSimpleCommand(msg);
+		}
+
+		@Override
+		public String[] parseMsg(String msg) throws RedisResultException {
+			return this.digester.parseResultMessage(msg);
+		}
+		
+	},
 	GET(new RedisSimpleDigester("GET")){
 		@Override
 		public String createMsg(String msg) throws RedisParseException {
